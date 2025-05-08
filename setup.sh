@@ -32,8 +32,6 @@ sudo systemctl enable --now docker
 # Installa K3s
 curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
 
-# Attendi che K3s sia completamente avviato
-sleep 30
 
 # Avvio servizio K3s
 sudo systemctl enable k3s && sudo systemctl start k3s
