@@ -56,7 +56,15 @@ Ho quindi provato a risolvere il problema aggiungendo l’utente al gruppo Docke
 #
 
 ![Screenshot 2025-05-08 093101](https://github.com/user-attachments/assets/532548ee-919c-4971-8722-de4e9066465d)
-# 
+#
+Alla fine ho impostato i permessi in modo che l'utente possa leggere, scrivere ed eseguire all'interno della cartella.
+#
+          sudo chown -R adminuser:adminuser /home/adminuser/.docker
+          chmod 755 /home/adminuser/.docker
+
+![Screenshot 2025-05-08 093116](https://github.com/user-attachments/assets/502ee7ac-f768-4b3f-b397-e2573d27985d)
+
+#
 
 Quando avvio il comando Sudo docker build -t hello-docker (Crea un’immagine Docker a partire da un Dockerfile) resta bloccato per più di 30 min
 #
