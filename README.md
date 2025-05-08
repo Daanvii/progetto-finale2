@@ -116,7 +116,9 @@ Il codice risulta bloccarsi sempre allo stesso punto
 http://<IP_PUBBLICO>:30080 sul web e controllato se ci fosse la scritta "Hello World!"
 
 
-
+## COS'E' UN FILE SH?
+#
+Un file con estensione .sh è un file di script di shell
 
 
 
