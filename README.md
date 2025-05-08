@@ -112,6 +112,8 @@ Il codice risulta bloccarsi sempre allo stesso punto
 ![image](https://github.com/user-attachments/assets/cf05c51d-ec19-4c35-a38b-d5d3938fc5eb)
 
 ## Come avrei concluso se tutto fosse andato a buon fine :')
+#
+http://<IP_PUBBLICO>:30080 sul web e controllato se ci fosse la scritta "Hello World!"
 
 
 
