@@ -115,10 +115,14 @@ Il codice risulta bloccarsi sempre allo stesso punto
 #
 http://<IP_PUBBLICO>:30080 sul web e controllato se ci fosse la scritta "Hello World!"
 
-
-## COS'E' UN FILE SH?
 #
-Un file con estensione .sh è un file di script di shell
+## COS'E' UN FILE SH?
+L'estensione . sh vuol dire SHell ed è un file con estensione .sh è un file di script di shell utilizzato nei sistemi operativi Unix e Linux.
+
+# Com'è strutturato?
+Un file .sh inizia tipicamente con una "shebang" che indica quale interprete utilizzare per eseguire lo script. Ad esempio:
+#
+              !/bin/bash
 
 
 
