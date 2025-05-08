@@ -80,7 +80,7 @@ cat <<EOF > package.json
 EOF
 
 # Installa npm e dipendenze
-sudo apt install -y npm
+sudo apt install npm -y
 sudo npm install
 
 # Crea il Dockerfile
