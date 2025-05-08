@@ -131,7 +131,15 @@ Il codice risulta bloccarsi sempre allo stesso punto
 ## Come avrei concluso se tutto fosse andato a buon fine :')
 #
 http://<IP_PUBBLICO>:30080 sul web e controllato se ci fosse la scritta "Hello World!"
+#
 
+
+# RISOLUZIONE PROBLEMA!!
+#
+cambiare la dimensione dell'immagine, immagine troppo piccola.
+
+                  #Elenca tutte le offerte Ubuntu disponibili
+                  echo "Offerte Ubuntu disponibili:" az vm image list-offers --location westeurope --publisher Canonical -o table
 
 
 
