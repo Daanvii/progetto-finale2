@@ -46,6 +46,15 @@ Entro nella vm dopo aver fatto il login su azure
 
 Installo i file app.js, package.js e Dockerfile in hello-docker
 #
+
+Ho ricevuto errori permission denied accedendo ai file di configurazione Docker config.json
+Anche il comando docker images ha restituito un warning di permessi.
+Ho quindi provato a risolvere il problema aggiungendo l’utente al gruppo Docker con:
+#
+          sudo usermod -aG docker $USER
+          newgrp docker
+#
+
 ![Screenshot 2025-05-08 093101](https://github.com/user-attachments/assets/532548ee-919c-4971-8722-de4e9066465d)
 # 
 
