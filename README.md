@@ -140,6 +140,23 @@ cambiare la dimensione dell'immagine, immagine troppo piccola.
 
                   #Elenca tutte le offerte Ubuntu disponibili
                   echo "Offerte Ubuntu disponibili:" az vm image list-offers --location westeurope --publisher Canonical -o table
+#
+Possibili cause del blocco o lentezza
+Performance del disco (I/O lento)
+Se la VM ha uno storage lento (es. HDD o low-tier SSD), la scrittura dei layer può impiegare molto tempo.
+
+Immagine molto grande
+Se hai molti file (es. node_modules, build pesanti, ecc.), Docker deve salvare tutti questi layer. Questo si riflette nei tempi di esportazione.
+
+Limiti di rete (se stai pushando l’immagine)
+Anche se non lo si vede direttamente dal log, se l'immagine viene pushata a un container registry (es. Azure Container Registry), potrebbe sembrare "fermo" durante l'export perché sta caricando i dati in rete.
+
+CPU bassa o VM sovraccarica
+VM con risorse limitate (1vCPU, RAM bassa) rallentano il processo di build e export.
+
+Problemi con Docker stesso
+A volte Docker si blocca in fase di export, soprattutto in ambienti CI/CD non ottimizzati o VM mal configurate.
+#
 
 
 
