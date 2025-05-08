@@ -57,7 +57,7 @@ Ho quindi provato a risolvere il problema aggiungendo l’utente al gruppo Docke
 
 ![Screenshot 2025-05-08 093101](https://github.com/user-attachments/assets/532548ee-919c-4971-8722-de4e9066465d)
 #
-Alla fine ho impostato i permessi in modo che l'utente possa leggere, scrivere ed eseguire all'interno della cartella.
+Alla fine ho impostato i permessi in modo da leggere, scrivere ed eseguire all'interno della cartella.
 #
           sudo chown -R adminuser:adminuser /home/adminuser/.docker
           chmod 755 /home/adminuser/.docker
